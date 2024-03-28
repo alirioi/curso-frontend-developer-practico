@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logos/favicon_yard_sale.svg" type="image/x-icon">
+    <title>Yard Sale</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+        }
+        
+        .mobile-menu {
+            height: 100vh;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .mobile-menu ul {
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+
+        .mobile-menu div ul:nth-child(2) {
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .mobile-menu ul li{
+            margin: 34px 20px;
+        }
+
+        .mobile-menu .email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+
+        .mobile-menu .sign-out {
+            font-size: var(--sm);
+            color: var(--hospital-green);
+        }
+
+        #email {
+            margin-bottom: 4px;
+        }
+
+        #sign-out {
+            margin-top: 0;
+            margin-bottom: 0;            
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <div>
+            <ul>
+                <li>
+                    <a href="/">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+    
+            <ul>
+                <li>
+                    <a href="/">My orders</a>
+                </li>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li id="email">
+                    <a href="/" class="email">email@example.com</a>
+                </li>
+                <li id="sign-out">
+                    <a href="/" class="sign-out">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
