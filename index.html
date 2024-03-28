@@ -67,15 +67,15 @@
         }
 
         .pantallas-container ul li {
-            border: 2px solid var(--very-light-pink);
+            border: 2px solid var(--hospital-green);
             border-radius: 20px;
             text-align: center;
-            background: var(--very-light-pink);
+            background: var(--hospital-green);
         }
 
-        .pantallas-container ul li:hover {
+        .pantallas-container ul li:hover, .pantallas-container ul li:active {
             border: 2px solid var(--hospital-green);
-            background: var(--hospital-green);            
+            background: var(--white);            
         }
 
         .pantallas-container ul li a {
@@ -85,6 +85,10 @@
             display: inline-block;
             width: 100%;
             padding: 12px;
+        }
+        
+        .pantallas-container ul li a:hover, .pantallas-container ul li a:active {
+            color: var(--hospital-green);
         }
 
         .nombre {
@@ -120,7 +124,7 @@
 
             .nombre{
                 justify-content: center;
-                margin: 15px 0;
+                padding: 20px;
             }
         }
     </style>
